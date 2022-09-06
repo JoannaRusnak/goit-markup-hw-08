@@ -1,0 +1,61 @@
+.contacts {
+	display: flex;
+	padding-left: 345px;
+	padding-right: 0px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	gap: 30px;
+	justify-self: center;
+
+	&__icon {
+		margin: 2px;
+		fill: currentColor;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: get-color(contact);
+		fill: get-color(contact);
+		line-height: 1.1;
+		font-size: 14px;
+		font-weight: 500;
+		font-family: get-font(primary);
+		letter-spacing: 0.02em;	
+		display: flex;
+		align-items: center;
+		transition: color 250ms, fill 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+
+.contacts__link:focus,
+.contacts__link:hover {
+	color: get-color(action);
+	fill: get-color(action);
+}	  
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.contacts {
+		display: none;
+	}
+}	
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.contacts {
+		display: inline-block;
+		margin-left: 100px;
+
+		&__link {
+			padding-top: 0px;
+			padding-bottom: 0px;
+			font-size: 12px;
+		}
+		
+		&__icon--mail {
+			padding-top: 21px;
+    		padding-right: 0px;
+    		padding-left: 0px;
+    		padding-bottom: 10px;
+		}
+	}
+}

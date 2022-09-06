@@ -1,0 +1,41 @@
+.footer-btn {
+	height: 50px;
+	width: 200px;
+	color: get-color(light-text);
+	background-color: get-color(action);
+	border-radius: 4px;
+	font-family: get-font(primary);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.06em;
+	text-align: center;
+	padding: 2px 25px 5px 25px;
+	margin-left: 10px;
+	border: none;
+	display: inline-flex;
+	justify-content: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transition: color 250ms, background 250ms, box-shadow 250ms;
+  	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		
+	&:hover {
+  	transform: scale(1.1);
+	}
+
+	&__label {
+		padding: 10px 20px 10px 15px;
+	}
+
+	&__icon {
+  	fill: get-color(light-text);
+  	height: 24px;
+  	width: 24px;
+	margin-top: 10px; 
+	}
+
+}
+
+
+

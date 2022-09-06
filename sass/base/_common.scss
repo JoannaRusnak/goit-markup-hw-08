@@ -1,0 +1,30 @@
+body {
+	font-family: get-font(primary), get-font(secondary), sans-serif;
+	background-color: get-bg-color(basic-background);
+	color: get-color(text);
+	width: 100%;
+	
+}
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	text-transform: none;
+	border: none;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+li {
+	display: list-item;
+}
+
+

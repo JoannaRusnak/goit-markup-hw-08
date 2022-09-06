@@ -1,0 +1,18 @@
+input::placeholder {
+  	font-family: get-font(primary);
+  	font-size: 16px;
+  	font-weight: 400;
+  	line-height: 20px;
+  	letter-spacing: 0.03em;
+  	text-align: left;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: get-color(light-text) !important;
+}

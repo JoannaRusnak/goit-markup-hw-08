@@ -1,0 +1,31 @@
+.header {
+	background-color: get-bg-color(basic-background);
+	height: 80px;
+	border-bottom: 1px solid #ececec;
+
+	&__links {
+    	display: flex;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.header {
+		height: 60px;
+		margin-bottom: 60px;
+		
+		&__links {
+    		display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  	.header {
+    	margin-bottom: 60px;
+		
+		&__links {
+			justify-content: space-between;
+		}
+  	}
+}	  
