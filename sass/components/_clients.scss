@@ -1,63 +1,64 @@
-.clients {
-	background-color: get-bg-color(basic-background);
+.clients__title {
+	text-align: center;
+	font-family: get-font(primary);
+	font-weight: 700;
+	font-size: 28px;
+	letter-spacing: 0.03em;
+	line-height: 1.18;
+	padding-bottom: 30px;
+}
 
-	&__title {
-		text-align: center;
-		font-family: get-font(primary);
-		font-weight: 700;
-		font-size: 36px;
-		letter-spacing: 0.03em;
-		line-height: 1.16;
-		margin: 0;
-		padding-bottom: 50px;
-	}
+.clients__list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;	
+}
 
-	&__list {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
+.clients__icon {
+	display: flex;
+	border: solid get-color(icon-nonaction) 1px;
+	border-radius: 4px;
+	width: 170px;
+	height: 92px;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	fill: get-color(icon-nonaction);
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: border, fill;
 
-	&__item {
-		display: flex;
-		border: solid #afb1b8 1px;
-		border-radius: 4px;
-		width: 74;
-		height: 32;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-		fill: get-color(icon-nonaction);
-		transition: fill 250ms, border 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-		&:not(:last-child) {
-			margin-right: 30px;
-		}
-
-		&:hover,
-		&:focus {
-  			fill: get-color(action);
-  			cursor: pointer;
-			border: solid get-color(action) 1px;
-			transition: fill 250ms, border 250ms;
-			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		}
-
-		& svg {
-			width: 168px;
-		}
+	&:hover,
+	&:focus {
+  		fill: get-color(action);
+		border: solid get-color(action) 1px;
 	}
 }
 
+.clients__icon--logo1,
+.clients__icon--logo2,
+.clients__icon--logo3,  
+.clients__icon--logo4,
+.clients__icon--logo5 {
+  	width: 106px;
+  	height: 60px;
+}
+
+.clients__icon--logo6 {
+  width: 94px;
+  height: 44px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
-	.clients__item {
+	.clients__icon {
 		width: 210px;
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-	.clients__item {
+	.clients__icon {
 		width: 226px;
 	}
 }

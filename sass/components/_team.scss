@@ -6,30 +6,28 @@
 
 	&__title {
 		font-weight: 700;
-		font-size: 36px;
+		font-size: 28px;
 		font-family: get-font(primary);
 		text-align: center;
 		letter-spacing: 0.03em;
 		padding-bottom: 50px;
-		line-height: 1.2;
+		line-height: 1.18;
 		margin: 0;
 	}
 
 	&__list {
 		display: flex;
-		justify-content: space-around;
+		flex-direction: row;
+		gap: 30px;
 	}
 
 	&__item {
-		width: 270px;
-		height: 428px;
-  		background: get-bg-color(basic-background);
+		display: block;
+		justify-content: center;
+  		background-color: get-bg-color(basic-background);
   		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   		border-radius: 0px 0px 4px 4px;
-	}
-
-	&__media {
-		display:block;
+		border: 0px none;
 	}
 }
 
@@ -37,25 +35,24 @@
 	color: get-color(text);
 	text-align: center;
 	letter-spacing: 0.03em;
+	display: block;
 	font-family: get-font(primary);
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.2;
+	line-height: 1.19;
 	padding-top: 30px;
 	padding-bottom: 10px;
-	margin: 0;
 
 
 	&__description {
 		color: get-color(contact);
 		font-size: 16px;
 		font-family: get-font(primary);
-		line-height: 1.2;
+		font-weight: 400;
+		line-height: 1.88;
 		text-align: center;
 		letter-spacing: 0.03em;
-		margin: 0;
 		display: block;
-		padding-bottom: 16px;
 	}
 }
 

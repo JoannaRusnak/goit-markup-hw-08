@@ -3,72 +3,94 @@
 	flex-direction: column;
 	align-items: center;
 	height: 400px;
-	
+
 	&__background {
-		height: 600px;
+		margin: 0 auto;
 		max-width: 1600px;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		background: rgba(47, 48, 58, 0.4);
-		background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(../images/mobile_header.jpg);
+		background-color: get-bg-color(intro-bg);
+		background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(./images/header_mobile_480x400.jpg);
 	}
 
 	&__header {
 		font-weight: 900;
-		font-size: 44px;
+		font-size: 26px;
 		font-family: get-font(primary);
-		line-height: 1.4;
+		line-height: 1.62;
 		letter-spacing: 0.06em;
-		border: 1px none;
 		text-transform: uppercase;
 		color: get-color(light-text);
-		display: block;
-		width: 696px;
-		margin:0 auto;
-		padding-top: 100px;
+		width: 365px;
+		padding-top: 118px;
+		padding-bottom: 30px;
 		text-align: center;
+	}
+
+	&__button {
+		font-weight: 700;
+		font-size: 16px;
+		font-family: get-font(primary);
+		line-height: 1.88;
+		width: 200px;
+		height: 50px;
+		background-color: get-color(action);
+		color: get-color(light-text);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		border: 1px none;
+		text-align: center;
+		letter-spacing: 0.06em;
+		cursor: pointer;
+		transition-duration: 250ms;
+		transition-property: transform;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   	.solution__background {
-	  	background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(../images/mobile_header.jpg);
+	  	background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(./images/header_mobile_480x400.jpg);
   	}
 
 	@media screen and (min-device-pixel-ratio: 2),
     	screen and (min-resolution: 192dpi),
     	screen and (min-resolution: 2dppx) {
     	.solution__background {
-      		background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(../images/mobile_header@2x.jpg);
+      		background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(./images/header_mobile_480x400@2x.jpg);
     	}
   	}  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   	.solution__background {
-    	background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(../images/tablet_header.jpg);
+    	background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(./images/header_tablet_768x400.jpg);
   	}
 
   	@media screen and (min-device-pixel-ratio: 2),
     	screen and (min-resolution: 192dpi),
     	screen and (min-resolution: 2dppx) {
     	.solution__background {
-      		background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(../images/tablet_header@2x.jpg);
+      		background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(./images/header_tablet_768x400@2x.jpg);
     	}
   	}
 }
 
 @media screen and (min-width: 1200px) {
   	.solution__background {
-    	background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(../images/desktop_header.jpg);
+    	background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(./images/header_desktop_1600x600.jpg);
   	}
   
 	@media screen and (min-device-pixel-ratio: 2),
     	screen and (min-resolution: 192dpi),
     	screen and (min-resolution: 2dppx) {
     	.solution__background {
-      		background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(../images/desktop_header@2x.jpg);
+      		background-image: linear-gradient(to right, #2f303a66 100%, #2f303a66 100%), url(./images/header_desktop_1600x600@2x.jpg);
     	}
   	}
 

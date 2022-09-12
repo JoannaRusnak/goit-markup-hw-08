@@ -2,7 +2,6 @@ body {
 	font-family: get-font(primary), get-font(secondary), sans-serif;
 	background-color: get-bg-color(basic-background);
 	color: get-color(text);
-	width: 100%;
 	
 }
 
@@ -19,12 +18,11 @@ body {
 	outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
+.center {
+	margin: 0 auto;
 }
 
 li {
 	display: list-item;
 }
-
 

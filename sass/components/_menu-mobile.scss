@@ -37,8 +37,8 @@
 .menu__button-icon {
     fill: get-color(dark-text);
     border: none;
-    height: 18.666669845581055px;
-    width: 18.666669845581055px;
+    height: 18.67px;
+    width: 18.67px;
     margin-top: 21px;
     margin-left: 396px;
     margin-right: 25.33px;
@@ -112,11 +112,11 @@
     padding-right: 10px;
     border-right: 1px solid #21212133;
   
-    &--first {
+    &-first {
         padding-left: 0px;
     }
   
-    &--last {
+    &-last {
         border-right: none;
     }
 }
